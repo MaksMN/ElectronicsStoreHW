@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
-#include "Project\IElectronics.h"
-#include "Project\AudioPlayer.h"
-#include "Project\Monitor.h"
-#include "Project\TVset.h"
-#include "Project\SmartPhone.h"
+#include "Classes\IElectronics.h"
+#include "Classes\AudioPlayer.h"
+#include "Classes\Monitor.h"
+#include "Classes\TVset.h"
+#include "Classes\SmartPhone.h"
 
 int main() {
 	setlocale(LC_ALL, "");
