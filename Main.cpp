@@ -28,23 +28,18 @@ int main()
 		case 1:
 			appliances[0]->Show();
 			break;
-
 		case 2:
 			appliances[1]->Show();
 			break;
-
 		case 3:
 			appliances[2]->Show();
 			break;
-
 		case 4:
 			appliances[3]->Show();
 			break;
-
 		case 0:
 			notexit = false;
 			break;
-
 		default:
 			std::cout << "Выберите устройство от 1 до 4 или 0, чтобы выйти" << std::endl;
 		}
