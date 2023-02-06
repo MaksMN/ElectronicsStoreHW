@@ -6,10 +6,11 @@
 #include "Classes\TVset.h"
 #include "Classes\SmartPhone.h"
 
-int main() {
+int main()
+{
 	setlocale(LC_ALL, "");
 
-	IElectronics* appliances[4];
+	IElectronics *appliances[4];
 
 	appliances[0] = new TVset(32, "Stereo 2.0", 500, "DVB-T DVB-C", true, "LG");
 	appliances[1] = new Monitor(27, 500, "DVI-D VGA", "Samsung");
@@ -17,7 +18,8 @@ int main() {
 	appliances[3] = new SmartPhone(7, "Mono", 15, "2G 3G 4G", "Xiaomi");
 
 	bool notexit = true;
-	do {
+	do
+	{
 		std::cout << "Выберите устройство: 1 - Телевизор, 2 - Монитор, 3 - Аудиоплеер, 4 - Смартфон, 0 - Выход" << std::endl;
 		int choice;
 		std::cin >> choice;
@@ -44,7 +46,7 @@ int main() {
 			break;
 
 		default:
-			std::cout << "Выберите устройство от 1 до 4 или 0, чтобы выйти" << std::endl;			
+			std::cout << "Выберите устройство от 1 до 4 или 0, чтобы выйти" << std::endl;
 		}
 	} while (notexit);
 
